@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listmargin">10dp</dimen>
+    <dimen name="textsize">15sp</dimen>
+    <dimen name="layout">200dp</dimen>
+    <dimen name="margine">8dp</dimen>
+    <dimen name="image">80dp</dimen>
+</resources>
