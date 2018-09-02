@@ -23,7 +23,7 @@
         android:layout_marginEnd="@dimen/margine"
         android:layout_marginStart="@dimen/margine"
         android:layout_marginTop="@dimen/margine"
-        android:src="@drawable/icon"
+        android:src="@drawable/bag_icons_07_128"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

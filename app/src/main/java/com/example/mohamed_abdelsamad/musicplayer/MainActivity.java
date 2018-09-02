@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         array.add("EarthquakeBeatScientist-IMissHer");
         array.add("Exclusion-Stranded");
         array.add("SidneySamsonFarEastMovement-BangittothecurbDotcomRemix");
-        listView = (ListView) findViewById(R.id.mylist);
+        listView = findViewById(R.id.mylist);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_list, R.id.text, array);
         listView.setAdapter(arrayAdapter);
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 String viewText = text.getText().toString();
                 intent.putExtra("position", viewText);
 
-                intent.putExtra("image", R.drawable.icon);
+                intent.putExtra("image", R.drawable.bag_icons_07_128);
                 Toast.makeText(MainActivity.this, viewText, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 finish();
