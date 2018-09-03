@@ -8,7 +8,6 @@
     tools:context="com.example.mohamed_abdelsamad.musicplayer.MainActivity">
 
 
-
     <ListView
         android:id="@+id/mylist"
         android:layout_width="match_parent"

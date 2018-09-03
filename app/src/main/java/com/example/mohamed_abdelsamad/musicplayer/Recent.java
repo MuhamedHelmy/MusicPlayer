@@ -24,12 +24,13 @@ public class Recent extends AppCompatActivity {
     Song song;
     ArrayList<String> songname;
     ArrayList<String> singername;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recent);
         TextView txt = findViewById(R.id.txt);
         Intent i = getIntent();
-        song=new Song();
+        song = new Song();
         songname = new ArrayList<String>();
         singername = new ArrayList<String>();
         resume = findViewById(R.id.resume);
@@ -56,9 +57,9 @@ public class Recent extends AppCompatActivity {
         resume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               md.start();
-               resume.setAlpha(0.0f);
-               pause.setAlpha(1.0f);
+                md.start();
+                resume.setAlpha(0.0f);
+                pause.setAlpha(1.0f);
             }
         });
         ImageView imageView = findViewById(R.id.mediaimage);
@@ -103,9 +104,9 @@ public class Recent extends AppCompatActivity {
             md = MediaPlayer.create(getApplicationContext(), R.raw.song5);
             md.start();
         }
-       String singername= song.getSingerName();
-        String soneName=song.getSongName();
-        txt.setText(soneName+" : "+singername);
+        String singername = song.getSingerName();
+        String soneName = song.getSongName();
+        txt.setText(soneName + " : " + singername);
 
 
     }
@@ -115,7 +116,6 @@ public class Recent extends AppCompatActivity {
         super.onPause();
         md.pause();
     }
-
 
 
 }
